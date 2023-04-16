@@ -1,14 +1,49 @@
 *{
-    background-color: lightpink;
+    background-color: #dbbff2;
+    font-family: 'Urbanist', sans-serif;
+}
+.p4{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #b398b5;
+    display: flex;
+   justify-content: space-between;
+   border-style:solid;
+    border-color: #812b87;
+  }
+  
+  .p3{
+    display: flex;
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    background-color: #b398b5;
+    font-size: 30px;
+    font-family: 'Urbanist', sans-serif;
+    border-style:solid;
+    border-color: #b398b5;
+  }
+
+#img{
+  width: 100%;
+  height: auto;
+
 }
 
+.cuarto {
+  background-color: #f2a5d8;
+  color: black;
+padding: 10px;
+}
 
+.posiciontexto{ }
 
-
-
-
-
-
+.posiciontextos{display:flex;
+justify-content: center;
+position: absolute;
+top:100px}
 
 
 
