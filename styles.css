@@ -8,24 +8,26 @@ text-decoration:none;}
     font-family: 'Urbanist', sans-serif;
 }
 
-.p1 {
+.titulo {
     font-size:  10vw;
     font-family: 'Urbanist', sans-serif;
     text-align: center;
     height: 70px;
     }
-.p2 {
+.subtitulo {
         font-size:  3vw;
         font-family: 'Urbanist', sans-serif;
         text-align: center;
         height: 30px;
     }
+.encabezado{ 
+           font-size:  2vw;
+           text-decoration: overline;}
 
-.p4{
+.navbar{
   list-style-type: none;
   margin: 0;
   padding: 0;
-  overflow: hidden;
   background-color: #b398b5;
   display: flex;
  justify-content: space-between;
@@ -33,7 +35,7 @@ text-decoration:none;}
   border-color: #812b87;
 }
 
-.p3{
+.menubar{
   display: flex;
   color: white;
   padding: 14px 16px;
