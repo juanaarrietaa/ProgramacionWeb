@@ -1,0 +1,27 @@
+body{
+    background-color: lavender;
+    font-family: 'Urbanist', sans-serif;
+}
+.navbar{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #b398b5;
+    display: flex;
+   justify-content: space-between;
+   border-style:solid;
+    border-color: #812b87;
+  }
+  
+  .menubar{
+    display: flex;
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    background-color: #b398b5;
+    font-size: 30px;
+    font-family: 'Urbanist', sans-serif;
+    border-style:solid;
+    border-color: #b398b5;
+  }
