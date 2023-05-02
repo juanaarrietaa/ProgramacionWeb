@@ -1,5 +1,7 @@
+* {border: 1px solid red;}
+
 body{
-    background-color: #dbbff2;
+    background-color: lavender;
     font-family: 'Urbanist', sans-serif;
 }
 .navbar{
@@ -47,9 +49,14 @@ justify-content: center;
 position: absolute;
 top:100px}
 
+
+
+
+
+
 .container {  display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 0.5fr 3fr 1fr 1fr 1fr;
   gap: 0px 0px;
   grid-auto-flow: row;
   grid-template-areas:
@@ -62,8 +69,7 @@ top:100px}
 
 .head { grid-area: head; }
 
-.img1 { grid-area: img1;padding: 0;
-  background-image: url(./imagenes/cama\ 2.jpg); }
+.img1 { grid-area: img1; }
 
 .img2 { grid-area: img2; }
 
@@ -71,8 +77,14 @@ top:100px}
 
 .bottom { grid-area: bottom; }
 
+.img1 { grid-area: img1;padding: 0;
+  background-image: url(./imagenes/area\ comun\ 1.jpg);background-repeat: no-repeat;  
+ }
 
+.img2 { grid-area: img2; padding: 0;
+background-image: url(./imagenes/cama\ 3.jpg);background-repeat: no-repeat; width: auto; }
 
+.img3 { grid-area: img3; padding: 0;
+  background-image: url(./imagenes/living\ 1.jpg);background-repeat: no-repeat ;  }
 
-
-
+.bottom { grid-area: bottom; }

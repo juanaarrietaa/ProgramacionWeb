@@ -1,5 +1,5 @@
 body{
-    background-color:lavender;
+  background-color:lavender;
 }
 a{color:black;
 text-decoration:none;}
@@ -12,13 +12,13 @@ text-decoration:none;}
     font-size:  10vw;
     font-family: 'Urbanist', sans-serif;
     text-align: center;
-    height: 70px;
+    height: 7vw;
     }
 .subtitulo {
         font-size:  3vw;
         font-family: 'Urbanist', sans-serif;
         text-align: center;
-        height: 30px;
+        height: 3vw;
     }
 .encabezado{ 
            font-size:  2vw;
@@ -38,10 +38,10 @@ text-decoration:none;}
 .menubar{
   display: flex;
   color: white;
-  padding: 14px 16px;
+  padding: 1.4vw 1.6vw;
   text-decoration: none;
   background-color: #b398b5;
-  font-size: 30px;
+  font-size: 3vw;
   font-family: 'Urbanist', sans-serif;
   border-style:solid;
   border-color: #b398b5;
@@ -60,9 +60,9 @@ text-decoration:none;}
   display: none;
   position: absolute;
   background-color: #f9f9f9;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  padding: 12px 16px;
+  min-width: 16vw;
+  box-shadow: 0vw 0.8vw 1.6vw 0vw rgba(0,0,0,0.2);
+  padding: 1.2vw 1.6vw;
   z-index: 1;
 }
 
