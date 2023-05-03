@@ -27,12 +27,6 @@ body{
     border-color: #b398b5;
   }
 
-#img{
-  width: 100%;
-  height: auto;
-
-}
-
 .cuarto {
   background-color: #f2a5d8;
   color: black;
@@ -72,13 +66,13 @@ top:10vw}
 .bottom { grid-area: bottom; }
 
 .img1 { grid-area: img1;padding: 0;
-  background-image: url(./imagenes/cocina\ 22.jpg);background-repeat: no-repeat;  
+  background-image: url(./imagenes/a.jpg);background-repeat: no-repeat; width:100%; height: auto;
  }
 
 .img2 { grid-area: img2; padding: 0;
-background-image: url(./imagenes/baño\ 33.jpg);background-repeat: no-repeat; width: auto; }
+background-image: url(./imagenes/b.jpg);background-repeat: no-repeat; width: auto; }
 
 .img3 { grid-area: img3; padding: 0;
-  background-image: url(./imagenes/living\ 1.jpg);background-repeat: no-repeat ;  }
+  background-image: url(./imagenes/c.jpg);background-repeat: no-repeat ;  }
 
 .bottom { grid-area: bottom; }
