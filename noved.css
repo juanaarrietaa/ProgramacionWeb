@@ -1,3 +1,4 @@
+
 body{
     background-color: lavender;
     font-family: 'Urbanist', sans-serif;
@@ -25,3 +26,41 @@ body{
     border-style:solid;
     border-color: #b398b5;
   }
+  
+  .container {  display: grid;
+    grid-template-columns: 1.2fr 0.8fr 0.8fr 1.2fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-auto-columns: 1fr;
+    gap: 2% 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "img1 text1 text2 img2"
+      "img3 text3 text4 img4"
+      "img5 text5 text6 img6";
+    height: 100%;
+  }
+  
+  .img1 { grid-area: img1; }
+  
+  .text1 { grid-area: text1; }
+  
+  .img2 { grid-area: img2; }
+  
+  .text2 { grid-area: text2; }
+  
+  .img3 { grid-area: img3; }
+  
+  .text3 { grid-area: text3; }
+  
+  .img4 { grid-area: img4; }
+  
+  .text4 { grid-area: text4; }
+  
+  .img5 { grid-area: img5; }
+  
+  .text5 { grid-area: text5; }
+  
+  .img6 { grid-area: img6; }
+  
+  .text6 { grid-area: text6; }
+  
