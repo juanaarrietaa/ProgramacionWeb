@@ -1,4 +1,4 @@
-*{border: 1px solid rgb(255, 0, 0);}
+/* *{border: 1px solid rgb(255, 0, 0);} */
 
 body{
     background-color: lavender;
@@ -27,21 +27,31 @@ body{
     border-style:solid;
     border-color: #b398b5;
   }
+ .posiciontexto{ display: flex;
+    justify-content: center;
+    text-align: center;}
 
 .cuarto {
   background-color: #f2a5d8;
   color: black;
-padding: 1vw;
+  padding: 1vw;
+  align-content: center;
+  width: 100%;
+}
+.texto {
+  background-color: black;
+  color: white;
+  padding: 1vw;
+  align-content: center;
+  text-align: center;
 }
 
-.posiciontexto{ display: flex;
-justify-content: center;
-text-align: center;}
-
-.posiciontextos{display:flex;
-justify-content: center;
-position: absolute;
-top:10vw}
+.cuadro{ 
+  color:black;
+  font-size: larger;
+  padding: 1vw;
+  text-align: center;
+}
 
 .container {  display: grid;
   grid-template-columns: 1fr;
@@ -71,13 +81,15 @@ top:10vw}
   background-image: url(./imagenes/a.jpg);
   background-repeat: no-repeat;
   max-width: 100%; 
+  background-position: center;
 }
 
 .img2 { grid-area: img2; 
   padding: 0;
   background-image: url(./imagenes/b.jpg);
   background-repeat: no-repeat; 
-  max-width: 100%; 
+  max-width: 100%;
+  background-position: center;
 }
 
 .img3 { grid-area: img3; 
@@ -85,8 +97,7 @@ top:10vw}
   background-image: url(./imagenes/c.jpg);
   background-repeat: no-repeat ;  
   max-width: 100%; 
-  align-items: stretch;
-  align-content: stretch;
+  background-position: center;
   
 }
 
