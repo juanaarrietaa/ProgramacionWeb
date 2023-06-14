@@ -25,3 +25,51 @@ body{
     border-style:solid;
     border-color: #b398b5;
   }
+
+  .tit{text-align: center;
+  font-size:xx-large;
+  }
+  
+
+ .container2 {  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 2px 2pxpx;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "a b"
+    "c d"
+    "f g";
+}
+
+.a { grid-area: a; justify-content: center; 
+}
+
+.b { grid-area: b; }
+
+.c { grid-area: c; }
+
+.d { grid-area: d; }
+
+.f { grid-area: f; }
+
+.g { grid-area: g; }
+
+
+.card { 
+  background-color:#b398b5;
+  border-color:black;
+  justify-content:center;
+  max-width: 100%;
+}
+
+.card-img-top{ 
+  justify-content: center;
+}
+
+.hola{
+  background-color: blue;
+}
+.hola2{
+  background-color: blue;
+}

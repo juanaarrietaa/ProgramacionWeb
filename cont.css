@@ -27,3 +27,17 @@ body{
   }
   .contacto{text-align: center;}
   
+
+  h1 {
+    text-align: center;
+    margin: 35px 0 20px 0 !important;
+  }
+    .control{
+      background-color: lightgrey;
+    }
+    .col{
+      align-items: start;
+    }
+    .col1{
+      justify-content: flex-end;
+    }
