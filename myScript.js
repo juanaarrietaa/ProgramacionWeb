@@ -1,4 +1,3 @@
-const comprarcontenido = document.getElementById("comprarcontenido");
 
 let cocina={ "nombre": "cocina",
         "precio": 25000,
@@ -32,24 +31,42 @@ let puerta={"nombre": "Puerta",
         "cantidad":0
     }
 
-const btn1= document.getElementById (btn1)
-const btn2= document.getElementById (btn2)
-const btn3= document.getElementById (btn3)
-const btn4= document.getElementById (btn4)
-const btn5= document.getElementById (btn5)
-const btn6= document.getElementById (btn6)
+const btn1= document.getElementById ("btn1")
+const btn2= document.getElementById ("btn2")
+const btn3= document.getElementById ("btn3")
+const btn4= document.getElementById ("btn4")
+const btn5= document.getElementById ("btn5")
+const btn6= document.getElementById ("btn6")
+
+btn1.addEventListener(onclick,(compro))
+btn2.addEventListener(onclick,(compro))
+btn3.addEventListener(onclick,(compro))
+btn4.addEventListener(onclick,(compro))
+btn5.addEventListener(onclick,(compro))
+btn6.addEventListener(onclick,(compro))
+
+
+
+function compro(){
+    if (articulo=0)
+         articulo=1
+      
+
+
+}
+
+
+
+function sumas(precio) {
+    
+}
 
 
 
 
 
 
-function suma(){}
 
-
-
-
-let carrito=[]
 
 
 // function guardar(){

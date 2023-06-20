@@ -30,14 +30,6 @@ body{
  .posiciontexto{ display: flex;
     justify-content: center;
     text-align: center;}
-
-.cuarto {
-  background-color: #f2a5d8;
-  color: black;
-  padding: 1vw;
-  align-content: center;
-  width: 100%;
-}
 .texto {
   background-color: black;
   color: white;
