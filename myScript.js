@@ -1,89 +1,88 @@
+// Obtener referencia a los botones de compra
+var botonesComprar = document.getElementsByClassName('btn-compra');
 
-let cocina={ "nombre": "cocina",
-        "precio": 25000,
-        "descrip": "Ideal para comprender la organización y funcionalidad de todo eso indispensable en la cocina.",
-        "cantidad":0
-    }
+// Agregar evento de clic a los botones de compra
+for (var i = 0; i < botonesComprar.length; i++) {
+  botonesComprar[i].addEventListener('click', agregarAlCarrito);
+}
 
-let baño= {"nombre": "Baño",
-        "precio": 15000,
-        "descrip": "Los mejores tips para la comodidad tuya y de tus invitados.",
-        "cantidad":0
-    }
-let lavadero= { "nombre": "Lavadero",
-        "precio": 18000,
-        "descrip": "Nada mas importante que un espacio motivador y ordenado para mantener la limpieza siempre.",
-        "cantidad":0
-    }
-let living={"nombre": "Living",
-        "precio": 35000,
-        "descrip": "El uso del living crea uniones mas fuerte con familia y amigos, aprovechemoslo!",
-        "cantidad":0
-    }
-let exterior={"nombre": "Exterior",
-        "precio": 22000,
-        "descrip": "Conectar con nuestra naturaleza es fundamental para nuestro bien estar.",
+// Carrito de compras
+var carrito = [];
+
+
+function agregarAlCarrito() {
+  var producto = {
+    nombre: this.parentNode.querySelector('p').textContent,
+    precio: parseFloat(this.parentNode.querySelector('.precio').textContent.slice(1)),
+    cantidad: 1
+  };
+
+  // Verificar si el producto ya está en el carrito
+  var productoExistente = carrito.find(function(item) {
+    return item.nombre === producto.nombre;
+  });
+
+  if (productoExistente) {
     
-    }
-let puerta={"nombre": "Puerta",
-        "precio": 15000,
-        "descrip": "There´s nothing like home, hagamos que la llegada a casa sea placentera.",
-        "cantidad":0
-    }
+    productoExistente.cantidad++;
+  } else {
+    
+    carrito.push(producto);
+  }
 
-const btn1= document.getElementById ("btn1")
-const btn2= document.getElementById ("btn2")
-const btn3= document.getElementById ("btn3")
-const btn4= document.getElementById ("btn4")
-const btn5= document.getElementById ("btn5")
-const btn6= document.getElementById ("btn6")
+  actualizarCarrito();
+}
 
-btn1.addEventListener(onclick,(compro))
-btn2.addEventListener(onclick,(compro))
-btn3.addEventListener(onclick,(compro))
-btn4.addEventListener(onclick,(compro))
-btn5.addEventListener(onclick,(compro))
-btn6.addEventListener(onclick,(compro))
+// Función para actualizar el carrito
+function actualizarCarrito() {
+  var carritoBody = document.getElementById('carrito-body');
+  var totalCarrito = document.getElementById('total-precio');
+  var vaciarCarritoBtn = document.getElementById('vaciar-carrito');
 
+  carritoBody.innerHTML = '';
+  totalCarrito.textContent = '$0';
 
+  for (var i = 0; i < carrito.length; i++) {
+    var producto = carrito[i];
+    var precioTotal = producto.precio * producto.cantidad;
 
-function compro(){
-    if (articulo=0)
-         articulo=1
-      
+    var fila = document.createElement('tr');
+    fila.innerHTML = `
+      <td>${producto.nombre}</td>
+      <td>$${producto.precio}</td>
+      <td>${producto.cantidad}</td>
+      <td>$${precioTotal}</td>
+      <td><button class="btn-eliminar" data-indice="${i}">Eliminar</button></td>
+    `;
 
+    carritoBody.appendChild(fila);
+  }
 
+  var total = carrito.reduce(function(acc, producto) {
+    return acc + producto.precio * producto.cantidad;
+  }, 0);
+
+  totalCarrito.textContent = '$' + total.toFixed(2);
+
+  vaciarCarritoBtn.addEventListener('click', vaciarCarrito);
+  var botonesEliminar = document.getElementsByClassName('btn-eliminar');
+  for (var j = 0; j < botonesEliminar.length; j++) {
+    botonesEliminar[j].addEventListener('click', eliminarProducto);
+  }
 }
 
 
-
-function sumas(precio) {
-    
+function vaciarCarrito() {
+  carrito = [];
+  actualizarCarrito();
 }
 
 
+function eliminarProducto() {
+  var indice = parseInt(this.dataset.indice);
+  carrito.splice(indice, 1);
+  actualizarCarrito();
+}
 
-
-
-
-
-
-
-// function guardar(){
-
-//     let valor=5000
-//     let valor2=7200
-//     valor=document.getElementById("value").value  
-//     localStorage.setItem("valor_curso", valor)
-//     localStorage.setItem("valor_curso", valor2)
-//     localStorage.getItem("valor_curso", valor)
-//     console.log(valor)
-    
-    
-//     }
-    
-    
-//     document.getElementById("guardar").addEventListener("click",guardar)
-    
-//     localStorage.clear()
-//     localStorage.removeItem("valor_curso")
+// Inicializar el carrito
+actualizarCarrito();

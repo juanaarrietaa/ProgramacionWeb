@@ -30,92 +30,99 @@
      <div class="tit">
       <h6>CURSOS DISPONIBLES PARA VOS!</h6>
      </div>
+     <div class="contenedor" id="contenedor">
       <div class="container2">
-      <div class="a">
-        <div class="col">
           <div class="card">
-            <img src="./imagenes/mesa1.jpg" class="card-img-top" alt="...">
+          
+            <img src="./imagenes/mesa1.jpg" class="card-img-top" alt="producto 1">
             <div class="card-body">
+              <div class="informacion">
               <h5 class="card-title">Cocinas</h5>
               <p class="card-text">Ideal para comprender la organización y funcionalidad de todo eso indispensable en la cocina.</p>
               </p>
               <p class="precio"> $25000</p>
-              <button type="comprar" class="compra" id="btn1">Lo quiero</button>
+              <button type="comprar" id="btn-compra">Lo quiero</button>
+              </div>
             </div>
           </div>
-        </div>
-      </div>
-      <div class="b">
-        <div class="col">
+      
           <div class="card">
-            <img src="./imagenes/bañocards.jpg" class="card-img-top" alt="...">
+            <img src="./imagenes/bañocards.jpg" class="card-img-top" alt="producto 2">
             <div class="card-body">
+              <div class="informacion">
               <h5 class="card-title">Baños</h5>
               <p class="card-text">Los mejores tips para la comodidad tuya y de tus invitados.</p>
               <p class="precio"> $15000</p>
-              <button type="comprar" class="compra" id="btn2">Lo quiero</button>
+              <button type="comprar" id="btn-compra">Lo quiero</button>
+              </div>
             </div>
           </div>
-        </div>
-      </div>
-      <div class="c">
-        <div class="col">
           <div class="card">
-            <img src="./imagenes/lavadero1.jpg" class="card-img-top" alt="">
+            <img src="./imagenes/lavadero1.jpg" class="card-img-top" alt="producto 3">
             <div class="card-body">
+              <div class="informacion">
               <h5 class="card-title">Lavadero</h5>
               <p class="card-text">Nada mas importante que un espacio motivador y ordenado para mantener la limpieza siempre.</p>
               <p class="precio"> $18000</p>
-              <button type="comprar" class="compra" id="btn3">Lo quiero</button> 
+              <button type="comprar" id="btn-compra" >Lo quiero</button> 
             </div>
           </div>
         </div>
-      </div>
-      <div class="d">
-        <div class="col">
           <div class="card">
-            <img src="./imagenes/sillon1.jpg" class="card-img-top" alt="...">
+            <img src="./imagenes/sillon1.jpg" class="card-img-top" alt="producto 4">
             <div class="card-body">
+              <div class="informacion">
               <h5 class="card-title">Living</h5>
               <p class="card-text">El uso del living crea uniones mas fuerte con familia y amigos, aprovechemoslo!.</p>
               <p class="precio"> $35000</p>
-              <button type="comprar" class="compra" id="btn4">Lo quiero</button>
+              <button type="comprar" id="btn-compra">Lo quiero</button>
+            </div>
             </div>
           </div>
-        </div>
-      </div>
-      <div class="f">
-        <div class="col">
           <div class="card">
-            <img src="./imagenes/afuera1.jpg" class="card-img-top" alt="...">
+            <img src="./imagenes/afuera1.jpg" class="card-img-top" alt="producto 5">
             <div class="card-body">
+              <div class="informacion">
               <h5 class="card-title">Exterior</h5>
               <p class="card-text">Conectar con nuestra naturaleza es fundamental para nuestro bien estar.</p>
               <p class="precio"> $22000</p>
-              <button type="comprar" class="compra" id="btn5">Lo quiero</button>
+              <button type="comprar" id="btn-compra">Lo quiero</button>
+             </div>
             </div>
           </div>
-        </div>
-      </div>
-      <div class="g">
-        <div class="col">
           <div class="card">
-            <img src="./imagenes/puerta1.jpg" class="card-img-top" alt="...">
+            <img src="./imagenes/puerta1.jpg" class="card-img-top" alt="producto 6">
             <div class="card-body">
+              <div class="informacion">
               <h5 class="card-title">Puerta</h5>
               <p class="card-text">There´s nothing like home, hagamos que la llegada a casa sea placentera.</p>
               <p class="precio"> $15000</p>
-             <button type="comprar" class="compra" id="btn6">Lo quiero</button>
+             <button type="comprar" id="btn-compra">Lo quiero</button>
+            </div>
             </div>
           </div>
-        </div>
+       </div>
       </div>
-    </div>
+    <div class="carrito" id="carrito">
+      <h2>Carrito de compras</h2>
+      <table id="tabla-carrito">
+        <thead>
+          <tr>
+            <th>Producto</th>
+            <th>Precio</th>
+            <th>Cantidad</th>
+            <th>Total</th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody id="carrito-body"></tbody>
+      </table>
+      <div id="total-carrito" class="total-carrito">
+        Total: <span id="total-precio">$0</span>
+      </div>
+      <button id="vaciar-carrito" class="btn-vaciar">Vaciar carrito</button>
+      </div>
   
-    <!-- <div class="hola2">
-      <button type="guardar" class="hola" id="guardar">guardar data</button>
-      <button type="borrar" class="hola" id="eliminar">borrar data</button>
-  </div> -->
   <script src="myScript.js"></script>
 </body>
     
