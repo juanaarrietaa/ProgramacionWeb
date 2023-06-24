@@ -81,6 +81,11 @@ h6{
 
 .btn-comprar{
   font-size: 4vw;
+  padding: 0.5vw 1vw;
+  background-color: lavenderblush;
+  color: #000000;
+  border: 20px;
+  border-radius: 4px;
 }
 @media (max-width:1205px) {
   .btn-comprar{
@@ -90,14 +95,12 @@ h6{
 }
 
 
-
 .btn {
   padding: 0.5vw 1vw;
   background-color: lavenderblush;
   color: #000000;
   border: 20px;
   border-radius: 4px;
-  cursor: pointer;
   font-size: 3.5vw;
 }
 
