@@ -91,19 +91,19 @@ body{
 }
 
 .texto1{
-  font-size: 50px;
+  font-size: 5vw;
   text-align: end;
   text-decoration: underline;
 }
 @media (max-with:1220px) {
-  .texto1{width: 80%;}
+  .texto1{font-size: 1.5vw;}
 
 }
 
 .texto2{
-  font-size: 65px;
+  font-size: 6.5vw;
   text-align: justify;
   text-decoration:solid;
 }
 @media (max-with:1220px) {
-  .texto2{width: 80%;}}
+  .texto2{font-size: 1.5vw;}}
