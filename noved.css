@@ -95,9 +95,15 @@ body{
   text-align: end;
   text-decoration: underline;
 }
+@media (max-with:1220px) {
+  .texto1{width: 80%;}
+
+}
 
 .texto2{
   font-size: 65px;
   text-align: justify;
   text-decoration:solid;
 }
+@media (max-with:1220px) {
+  .texto2{width: 80%;}}
