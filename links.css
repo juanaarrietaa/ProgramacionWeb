@@ -30,20 +30,29 @@ body{
  .posiciontexto{ display: flex;
     justify-content: center;
     text-align: center;}
+
+h2{
+  font-size: 4.5vw;
+}
+
+p{font-size: 3.5vw;}
+
 .texto {
   background-color: black;
   color: white;
   padding: 1vw;
   align-content: center;
   text-align: center;
+  font-size: 4vw;
 }
 
 .cuadro{ 
   color:black;
-  font-size: larger;
+  font-size: 4vw;
   padding: 1vw;
   text-align: center;
 }
+
 
 .container {  display: grid;
   grid-template-columns: 1fr;
@@ -76,6 +85,11 @@ body{
   background-position: center;
 }
 
+@media(max-width:1220px){
+  .img1{width: 100%;
+  }
+}
+
 .img2 { grid-area: img2; 
   padding: 0;
   background-image: url(./imagenes/b.jpg);
@@ -84,13 +98,22 @@ body{
   background-position: center;
 }
 
+@media(max-width:1220px){
+  .img2{width: 100%;
+  }
+}
+
 .img3 { grid-area: img3; 
   padding: 0;
   background-image: url(./imagenes/c.jpg);
   background-repeat: no-repeat ;  
   max-width: 100%; 
   background-position: center;
-  
+}
+
+@media(max-width:1220px){
+  .img3{width: 100%;
+  }
 }
 
 .bottom { grid-area: bottom; }
