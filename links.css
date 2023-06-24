@@ -32,10 +32,10 @@ body{
     text-align: center;}
 
 h2{
-  font-size: 4.5vw;
+  font-size: 3.5vw;
 }
 
-p{font-size: 3.5vw;}
+p{font-size: 2.5vw;}
 
 .texto {
   background-color: black;
@@ -85,8 +85,10 @@ p{font-size: 3.5vw;}
   background-position: center;
 }
 
-@media(max-width:1220px){
-  .img1{width: 100%;
+@media(max-width:1205px){
+  .img1{width: 80%;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
@@ -98,7 +100,7 @@ p{font-size: 3.5vw;}
   background-position: center;
 }
 
-@media(max-width:1220px){
+@media(max-width:1205px){
   .img2{width: 100%;
   }
 }
@@ -111,7 +113,7 @@ p{font-size: 3.5vw;}
   background-position: center;
 }
 
-@media(max-width:1220px){
+@media(max-width:1205px){
   .img3{width: 100%;
   }
 }

@@ -25,6 +25,25 @@ text-decoration:none;}
            font-size:  2vw;
            text-decoration: overline;}
 
+@media(max-width:1205px){
+  .encabezado{
+    font-size: 3vw;
+  }
+  .titulo {
+    font-size:  10vw;
+    font-family: 'Urbanist', sans-serif;
+    text-align: center;
+    height: 7vw;
+    margin: 4vw;
+    }
+.subtitulo {
+        font-size:  3vw;
+        font-family: 'Urbanist', sans-serif;
+        text-align: center;
+        height: 3vw;
+    }
+}
+
 .navbar{
   list-style-type: none;
   margin: 0;

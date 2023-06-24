@@ -95,7 +95,7 @@ body{
   text-align: end;
   text-decoration: underline;
 }
-@media (max-with:1220px) {
+@media (max-with:1205px) {
   .texto1{font-size: 1.5vw;}
 
 }
@@ -105,7 +105,7 @@ body{
   text-align: justify;
   text-decoration:solid;
 }
-@media (max-with:1220px) {
+@media (max-with:1205px) {
   .texto2{font-size: 1.5vw;}}
 
   h1{
@@ -113,4 +113,12 @@ body{
   }
   h2{
     font-size: 3vw;
+  }
+
+  .cuadro1{
+    background-color: #812b87;
+  }
+  
+  .cuadro2{
+    background-color: #b398b5;
   }
