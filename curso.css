@@ -35,26 +35,18 @@ body{
   }
 
   .container2 {  display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
     gap: 10px 10px;
-    grid-auto-flow: row;
-    grid-template-areas:
-      "a b"
-      "c d"
-      "f g";
+    flex-direction: column;
   }
 
 .card { 
-  display:block;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
   background-color:#b398b5;
   border-color:black;
   border-radius: 20px 20px 20px 20px;
 }
-
-@media (max-with:1220px) {
-  .card{width: 100%;
-  max-height: 100%;}}
 
 .card-title{
   font-size: 4.5vw;
@@ -70,22 +62,31 @@ h6{
   font-size: 5.5vw;
 }
 
-.b{
-  width: 100%;
-  max-height: 100%;
-}
 
-img{
-  width: 32vw;
-  height: 34vw;
-  object-fit: cover;
-  border-radius: 20px 20px 0px 0px;
+.card-img-top{
+  width: 70vw;
+    height: 50vw;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    display: flex;
+    border-radius:20px 20px 0px 0px;
 }
 
 .card-link btn-add-cart{
   background-color: lavender;
   border: 20px;
-  object-fit: cover;
+ font-size: 5vw;
+}
+
+.btn-comprar{
+  font-size: 4vw;
+}
+@media (max-width:1205px) {
+  .btn-comprar{
+    font-size: 3vw;
+  }
+  
 }
 
 
@@ -100,20 +101,14 @@ img{
   font-size: 3.5vw;
 }
 
+@media  (max-width:1205px) {
+  .btn{
+    font-size: 3vw;
+  }
+}
+
 .container-cart{
   background-color: #b398b5;
   border: 20px 20px 20px 20px;
 }
 
-.col-md-4 {
-  margin-bottom: 3vw;
-}
-
-#containerContrataciones {
-  padding: 9vw;
-  background-color: #ffe7f6;
-}
-
-.container-cart{
-  justify-content: center;
-}
