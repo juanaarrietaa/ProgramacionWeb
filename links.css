@@ -31,11 +31,11 @@ body{
     justify-content: center;
     text-align: center;}
 
-h2{
+.titulo-1{
   font-size: 3.5vw;
 }
 
-p{font-size: 2.5vw;}
+.sub-text{font-size: 2.5vw;}
 
 .texto {
   background-color: black;
